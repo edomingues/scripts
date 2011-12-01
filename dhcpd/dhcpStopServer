@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DHCPD_SCRIPT=/etc/init.d/dhcp3-server
+
+sudo $DHCPD_SCRIPT stop

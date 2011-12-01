@@ -1,0 +1,8 @@
+#!/bin/bash
+
+CABLE_IF=eth0
+LOCAL_IP=10.0.0.1
+DHCPD_SCRIPT=/etc/init.d/dhcp3-server
+
+sudo ifconfig $CABLE_IF $LOCAL_IP
+sudo $DHCPD_SCRIPT start 
