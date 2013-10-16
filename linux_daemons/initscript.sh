@@ -3,6 +3,7 @@
 DIR=/opt/apps/app
 
 start() {
+  cd $DIR
   $DIR/start.sh
 }
 
