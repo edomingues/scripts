@@ -1,0 +1,12 @@
+[Unit]
+Description=Example service
+After=multi-user.target
+
+[Service]
+type=simple
+WorkingDirectory=/opt/example
+ExecStart=/opt/example/run.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
